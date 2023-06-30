@@ -3,7 +3,7 @@
     color: #FFF ;
 }
 h1{
-    font-size: 8rem;
+    font-size: 10rem;
     animation-duration: .8s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
@@ -15,10 +15,8 @@ h1{
     100% { opacity:#000000; }
     }
 
-
-
 h2{
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 3rem 0;
 }
 

@@ -4,6 +4,7 @@ import './Info.css';
 const Info = (props) => {
 
     const classnames = ["Information"];
+    
     if (props.className) classnames.push(props.className);
 
     switch (props.as){
