@@ -4,10 +4,12 @@
     margin: 1.1rem;
     background-color: #000;
 }
+
 .CarteRounded1{
     border: 0.5rem #5900ff solid;
     border-radius: 5rem 0 5rem 0;
 }
+
 .CarteRounded2{
     border: 0.5rem #00c3ff solid;
     border-radius:  0 5rem 0 5rem;
