@@ -7,6 +7,8 @@ import './Carte.css';
 
 const Carte = (props) => {
 
+  /* Créer un état pour afficher et masquer un éléement du div l'hors du hover de la souris */
+
   const [Afficher, setIsShown] = useState(false);
 
   const classnamesCarte = ["carte"];
@@ -20,22 +22,33 @@ const Carte = (props) => {
   return (
 
     <article className={classnamesCarte.join(" ")} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+
     <Titre as="h2">{props.TitleCard}</Titre>
+
     <Image 
         src={props.ImgSrcCard} 
+
         alt={props.ImgAltCard} 
+
         loading={props.ImgLoadingCard}
+
     />
+
     {Afficher && (
+
     <div>
           
-          <Titre as="h3">{props.Title2}</Titre>      
+          <Titre as="h3">{props.Title2}</Titre>    
+
           <Information>{props.Information}</Information>
     </div>
+
     )}
 
     </article>
+
   )
+  
 }
 
 export default Carte;
